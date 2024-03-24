@@ -22,11 +22,11 @@ public class BookingService {
     public List<Place> getFreePlaces() {
         List<Place> result = new ArrayList<>();
         result.add(new Place("Red", 1, 1));
-        result.add(new Place("Red", 1, 2));
+        result.add(new Place("Blue", 1, 2));
         result.add(new Place("Red", 2, 1));
         result.add(new Place("Red", 2, 2));
         result.add(new Place("Green", 1, 1));
-        result.add(new Place("Green", 1, 2));
+        result.add(new Place("Yelow", 1, 2));
         result.add(new Place("Green", 2, 1));
         result.add(new Place("Green", 2, 2));
         return result;
