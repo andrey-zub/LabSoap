@@ -10,16 +10,16 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for getFreePlacesResponse complex type.
+ * <p>Java class for getFreeSeatsResponse complex type.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="getFreePlacesResponse">
+ * &lt;complexType name="getFreeSeatsResponse">
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="return" type="{https://donstu.org/booking}place" maxOccurs="unbounded" minOccurs="0"/>
+ *         &lt;element name="return" type="{https://donstu.org/reservation}seat" maxOccurs="unbounded" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -29,13 +29,13 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "getFreePlacesResponse", propOrder = {
+@XmlType(name = "getFreeSeatsResponse", propOrder = {
     "_return"
 })
-public class GetFreePlacesResponse {
+public class GetFreeSeatsResponse {
 
     @XmlElement(name = "return")
-    protected List<Place> _return;
+    protected List<Seat> _return;
 
     /**
      * Gets the value of the return property.
@@ -55,13 +55,13 @@ public class GetFreePlacesResponse {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link Place }
+     * {@link Seat }
      * 
      * 
      */
-    public List<Place> getReturn() {
+    public List<Seat> getReturn() {
         if (_return == null) {
-            _return = new ArrayList<Place>();
+            _return = new ArrayList<Seat>();
         }
         return this._return;
     }

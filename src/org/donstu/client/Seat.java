@@ -7,18 +7,18 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for place complex type.
+ * <p>Java class for seat complex type.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="place">
+ * &lt;complexType name="seat">
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
  *         &lt;element name="hall" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="place" type="{http://www.w3.org/2001/XMLSchema}int"/>
  *         &lt;element name="row" type="{http://www.w3.org/2001/XMLSchema}int"/>
+ *         &lt;element name="seat" type="{http://www.w3.org/2001/XMLSchema}int"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -28,16 +28,16 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "place", propOrder = {
+@XmlType(name = "seat", propOrder = {
     "hall",
-    "place",
-    "row"
+    "row",
+    "seat"
 })
-public class Place {
+public class Seat {
 
     protected String hall;
-    protected int place;
     protected int row;
+    protected int seat;
 
     /**
      * Gets the value of the hall property.
@@ -64,22 +64,6 @@ public class Place {
     }
 
     /**
-     * Gets the value of the place property.
-     * 
-     */
-    public int getPlace() {
-        return place;
-    }
-
-    /**
-     * Sets the value of the place property.
-     * 
-     */
-    public void setPlace(int value) {
-        this.place = value;
-    }
-
-    /**
      * Gets the value of the row property.
      * 
      */
@@ -93,6 +77,22 @@ public class Place {
      */
     public void setRow(int value) {
         this.row = value;
+    }
+
+    /**
+     * Gets the value of the seat property.
+     * 
+     */
+    public int getSeat() {
+        return seat;
+    }
+
+    /**
+     * Sets the value of the seat property.
+     * 
+     */
+    public void setSeat(int value) {
+        this.seat = value;
     }
 
 }

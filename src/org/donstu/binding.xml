@@ -1,11 +1,9 @@
-<!---&xml version="1.0" encoding="UTF-8" standalone="yes"?-->
+<!-- ?xml version="1.0" encoding="UTF-8" standalone="yes" ?-->
 <jaxws:bindings xmlns:jaxws="http://java.sun.com/xml/ns/jaxws"
                 xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
-                wsdLocation="http:/127.0.0.1:8088/booking?wsdl"
-                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                xsi:schemaLocation="http://java.sun.com/xml/ns/jaxws ">
-    <jaxws:bindings node="//wsdl:portType[@name='BookingService']">
-        <jaxws:bindings node="wsdl:operation[@name='getFreePlaces']">
+                wsdlLocation="http://127.0.0.1:8090/reservation?wsdl" >
+    <jaxws:bindings node="//wsdl:portType[@name='ReservationService']">
+        <jaxws:bindings node="wsdl:operation[@name='getFreeSeats']">
             <jaxws:enableAsyncMapping>true</jaxws:enableAsyncMapping>
         </jaxws:bindings>
     </jaxws:bindings>

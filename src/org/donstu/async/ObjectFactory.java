@@ -1,5 +1,5 @@
 
-package org.donstu.client;
+package org.donstu.async;
 
 import javax.xml.bind.JAXBElement;
 import javax.xml.bind.annotation.XmlElementDecl;
@@ -10,7 +10,7 @@ import javax.xml.namespace.QName;
 /**
  * This object contains factory methods for each 
  * Java content interface and Java element interface 
- * generated in the org.donstu.client package. 
+ * generated in the org.donstu.async package. 
  * <p>An ObjectFactory allows you to programatically 
  * construct new instances of the Java representation 
  * for XML content. The Java representation of XML 
@@ -28,7 +28,7 @@ public class ObjectFactory {
     private final static QName _GetFreeSeats_QNAME = new QName("https://donstu.org/reservation", "getFreeSeats");
 
     /**
-     * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: org.donstu.client
+     * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: org.donstu.async
      * 
      */
     public ObjectFactory() {
